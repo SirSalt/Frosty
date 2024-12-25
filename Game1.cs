@@ -67,7 +67,7 @@ namespace Frosty
 
             _spriteBatch.Begin();
 
-            _spriteSheet.DrawSprite(_spriteBatch, _spriteSheet.sprites[58]);
+            _spriteSheet.DrawSprite(_spriteBatch, _spriteSheet.sprites[0]);
 
             //reactivate when i have screens!!!!!!!!!
             //GameSettings.ActiveScreen.Draw(_spriteBatch);

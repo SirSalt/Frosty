@@ -38,6 +38,8 @@ namespace Frosty
 
         public Point SpriteList()
         {
+            //made a list for every sprite in the spritesheet.
+            //13*6 -1 = 77 sprites max.
 
             for (int y = 0; y < 6; y++)
             {
