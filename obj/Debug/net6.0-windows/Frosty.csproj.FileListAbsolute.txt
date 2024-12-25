@@ -37,3 +37,4 @@ E:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\refint\F
 E:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\Frosty.pdb
 E:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\Frosty.genruntimeconfig.cache
 E:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\ref\Frosty.dll
+E:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\Frosty.sourcelink.json

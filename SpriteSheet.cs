@@ -19,6 +19,8 @@ namespace Frosty
         static int _spriteSize;
         Rectangle _spriteBounds = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
 
+        public List<Point> sprites = new List<Point>();
+
 
 
         public void Update(GameTime gameTime)
@@ -34,16 +36,33 @@ namespace Frosty
             return _spriteSize;
         }
 
+        public Point SpriteList()
+        {
 
-        public void DrawSprite(SpriteBatch spritebatch,int spriteLocationX, int spriteLocationY)
+            for (int y = 0; y < 6; y++)
+            {
+                for (int x = 0; x < 13; x++)
+                {
+                    sprites.Add(new Point(x, y));
+
+                }
+            }
+
+
+
+            return new Point(0, 0);
+        }
+
+
+        public void DrawSprite(SpriteBatch spritebatch, Point sprite)
         {
             _spriteBounds = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
 
-            
 
-            spritebatch.Draw(_texture, _spriteBounds, new Rectangle(0 + _spriteSize * spriteLocationX, 0 + _spriteSize * spriteLocationY, _spriteSize, _spriteSize), Color.White);
 
-           
+            spritebatch.Draw(_texture, _spriteBounds, new Rectangle(0 + _spriteSize * sprite.X, 0 + _spriteSize * sprite.Y, _spriteSize, _spriteSize), Color.White);
+
+
         }
 
 

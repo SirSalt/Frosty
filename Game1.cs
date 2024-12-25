@@ -25,7 +25,7 @@ namespace Frosty
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            
+            _spriteSheet.SpriteList();
 
 
             base.Initialize();
@@ -67,7 +67,7 @@ namespace Frosty
 
             _spriteBatch.Begin();
 
-            _spriteSheet.DrawSprite(_spriteBatch, 6,4);
+            _spriteSheet.DrawSprite(_spriteBatch, _spriteSheet.sprites[58]);
 
             //reactivate when i have screens!!!!!!!!!
             //GameSettings.ActiveScreen.Draw(_spriteBatch);
