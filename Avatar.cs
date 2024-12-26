@@ -9,8 +9,6 @@ namespace Frosty
     internal class Avatar
     {
 
-
-
         SpriteSheet _spriteSheet;
 
 

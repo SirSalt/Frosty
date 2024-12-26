@@ -8,5 +8,11 @@ namespace Frosty
 {
     internal class Platform
     {
+
+
+
+
+
+
     }
 }

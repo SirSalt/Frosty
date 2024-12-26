@@ -41,9 +41,9 @@ namespace Frosty
             //made a list for every sprite in the spritesheet.
             //13*6 -1 = 77 sprites max.
 
-            for (int y = 0; y < 6; y++)
+            for (int y = 0; y < 7; y++)
             {
-                for (int x = 0; x < 13; x++)
+                for (int x = 0; x < 14; x++)
                 {
                     sprites.Add(new Point(x, y));
 
