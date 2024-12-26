@@ -16,8 +16,13 @@ namespace Frosty
         static Vector2 _origin = new Vector2(100, 100);
 
         public Texture2D _texture;
+<<<<<<< Updated upstream
         static int _spriteSize;
         Rectangle _spriteBounds = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
+=======
+        public int _spriteSize = 70;
+        //public Rectangle _dedstinationRectangle = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
+>>>>>>> Stashed changes
 
         public List<Point> sprites = new List<Point>();
 
@@ -25,7 +30,12 @@ namespace Frosty
 
         public void Update(GameTime gameTime)
         {
+<<<<<<< Updated upstream
             SpriteSizeCalulator(_texture);
+=======
+            SpriteSizeCalulator();
+
+>>>>>>> Stashed changes
         }
 
 

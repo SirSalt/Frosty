@@ -10,7 +10,13 @@ namespace Frosty
         private SpriteBatch _spriteBatch;
 
         SpriteSheet _spriteSheet = new SpriteSheet();
+<<<<<<< Updated upstream
         
+=======
+        Platform _platform = new Platform();
+        Avatar _avatar = new Avatar();
+
+>>>>>>> Stashed changes
 
         public Game1()
         {
@@ -26,6 +32,7 @@ namespace Frosty
         {
             // TODO: Add your initialization logic here
             _spriteSheet.SpriteList();
+            
 
 
             base.Initialize();
@@ -51,6 +58,7 @@ namespace Frosty
 
 
             _spriteSheet.Update(gameTime);
+            _avatar.DrawPlayer(_spriteBatch);
 
             //reactivate when i have screens!!!!!!!!!
             //GameSettings.ActiveScreen.Update(gameTime);
