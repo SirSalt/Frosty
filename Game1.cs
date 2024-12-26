@@ -9,8 +9,10 @@ namespace Frosty
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        //Important Game Classes
         SpriteSheet _spriteSheet = new SpriteSheet();
-        
+        Platform _platform = new Platform();
+
 
         public Game1()
         {
@@ -27,7 +29,6 @@ namespace Frosty
             // TODO: Add your initialization logic here
             _spriteSheet.SpriteList();
 
-
             base.Initialize();
         }
 
@@ -38,6 +39,7 @@ namespace Frosty
             // TODO: use this.Content to load your game content here
 
             _spriteSheet._texture = Content.Load<Texture2D>("Graphics/sheet");
+           
 
         }
 
@@ -46,9 +48,7 @@ namespace Frosty
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
-
-
+            
 
             _spriteSheet.Update(gameTime);
 
@@ -67,7 +67,10 @@ namespace Frosty
 
             _spriteBatch.Begin();
 
-            _spriteSheet.DrawSprite(_spriteBatch, _spriteSheet.sprites[62]);
+            //_spriteSheet.DrawSprite(_spriteBatch, _spriteSheet.sprites[62]);
+
+            //draw ground plane
+            _platform.BaseGround(_spriteBatch, _spriteSheet);
 
             //reactivate when i have screens!!!!!!!!!
             //GameSettings.ActiveScreen.Draw(_spriteBatch);
