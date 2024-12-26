@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Frosty")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7814826940fed9103b1afd6f73255e9040aeb93")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a931a880ef5ac83e8b2c8bbda0bcbd8baa4c1a4a")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5fe6de8f54fc7fdff1426f1d49c9340690157a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Frosty")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Frosty")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using System;
 using System.Collections.Generic;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,20 +12,15 @@ namespace Frosty
     internal class Platform
     {
 
-<<<<<<< Updated upstream
-=======
         SpriteSheet _spriteSheet = new SpriteSheet();
         public Rectangle destinationrectangle;
         int spriteSize;
->>>>>>> Stashed changes
 
         List<Rectangle> floorTiles = new List<Rectangle>();
 
 
 
 
-<<<<<<< Updated upstream
-=======
         //make base Ground
         public void BaseGround(SpriteBatch spriteBatch, SpriteSheet spriteSheet)
         {
@@ -48,7 +46,6 @@ namespace Frosty
 
 
         }
->>>>>>> Stashed changes
 
 
     }

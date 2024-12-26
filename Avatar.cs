@@ -11,22 +11,38 @@ namespace Frosty
     public class Avatar
     {
 
-        SpriteSheet _spriteSheet;
+        SpriteSheet _spriteSheet = new SpriteSheet();
         Point _startPosition;
+        Rectangle destinationRectangle;
+
+        float gravity = -9.81f;
 
 
-        public void DrawPlayer(SpriteBatch spriteBatch)
+
+        public void Update(GameTime time)
         {
-            spriteBatch.Begin();
-
-
-            _startPosition = new Point(100,GameSettings.WINDOWHEIGHT-_spriteSheet._spriteSize);
-
-            _spriteSheet.DrawSprite(spriteBatch, _spriteSheet.sprites[0], _startPosition);
-
-            spriteBatch.End();
+            Gravity();
         }
 
+
+
+
+
+        public void DrawPlayer(SpriteBatch spriteBatch, SpriteSheet spriteSheet)
+        {
+
+            _startPosition = new Point(100, GameSettings.WINDOWHEIGHT - spriteSheet._spriteSize * 2);
+            destinationRectangle = new Rectangle(_startPosition.X, _startPosition.Y, spriteSheet._spriteSize, spriteSheet._spriteSize);
+
+            spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[62], destinationRectangle);
+
+        }
+
+
+        public void Gravity()
+        {
+            destinationRectangle.Y += (int)gravity;
+        }
 
 
 

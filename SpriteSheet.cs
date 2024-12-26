@@ -63,7 +63,6 @@ namespace Frosty
             //_dedstinationRectangle = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
 
 
-
             spritebatch.Draw(_texture, destinationRectangle, new Rectangle(0 + _spriteSize * sprite.X, 0 + _spriteSize * sprite.Y, _spriteSize, _spriteSize), Color.White);
 
 
