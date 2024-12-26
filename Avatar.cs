@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Frosty
 {
-    internal class Avatar
+    public class Avatar
     {
 
         SpriteSheet _spriteSheet;
-        Rectangle _startPosition;
+        Point _startPosition;
 
 
         public void DrawPlayer(SpriteBatch spriteBatch)
@@ -20,7 +20,7 @@ namespace Frosty
             spriteBatch.Begin();
 
 
-            _startPosition = new Rectangle(100,GameSettings.WINDOWHEIGHT-_spriteSheet._spriteSize,_spriteSheet._spriteSize,_spriteSheet._spriteSize);
+            _startPosition = new Point(100,GameSettings.WINDOWHEIGHT-_spriteSheet._spriteSize);
 
             _spriteSheet.DrawSprite(spriteBatch, _spriteSheet.sprites[0], _startPosition);
 

@@ -16,13 +16,8 @@ namespace Frosty
         static Vector2 _origin = new Vector2(100, 100);
 
         public Texture2D _texture;
-<<<<<<< Updated upstream
-        static int _spriteSize;
-        Rectangle _spriteBounds = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
-=======
         public int _spriteSize = 70;
         //public Rectangle _dedstinationRectangle = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
->>>>>>> Stashed changes
 
         public List<Point> sprites = new List<Point>();
 
@@ -30,20 +25,17 @@ namespace Frosty
 
         public void Update(GameTime gameTime)
         {
-<<<<<<< Updated upstream
-            SpriteSizeCalulator(_texture);
-=======
             SpriteSizeCalulator();
 
->>>>>>> Stashed changes
         }
 
 
-        int SpriteSizeCalulator(Texture2D spriteSheet)
+        public int SpriteSizeCalulator()
         {
-            _spriteSize = spriteSheet.Width / 14;
+            _spriteSize = _texture.Width / 14;
 
             return _spriteSize;
+
         }
 
         public Point SpriteList()
@@ -66,13 +58,13 @@ namespace Frosty
         }
 
 
-        public void DrawSprite(SpriteBatch spritebatch, Point sprite)
+        public void DrawSprite(SpriteBatch spritebatch, Point sprite, Rectangle destinationRectangle)
         {
-            _spriteBounds = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
+            //_dedstinationRectangle = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
 
 
 
-            spritebatch.Draw(_texture, _spriteBounds, new Rectangle(0 + _spriteSize * sprite.X, 0 + _spriteSize * sprite.Y, _spriteSize, _spriteSize), Color.White);
+            spritebatch.Draw(_texture, destinationRectangle, new Rectangle(0 + _spriteSize * sprite.X, 0 + _spriteSize * sprite.Y, _spriteSize, _spriteSize), Color.White);
 
 
         }
