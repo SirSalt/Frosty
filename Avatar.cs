@@ -52,19 +52,15 @@ namespace Frosty
         public void Collision(Platform platform)
         {
 
-            
+            int index = destinationRectangle.X/GameSettings.WINDOWWIDTH;
 
-            foreach(Rectangle rect in platform.floorTiles)
+            for(int i = 0; i<platform.floorTiles.Count;)
+
+
+            if (destinationRectangle.Intersects(platform.floorTiles[index]))
             {
-                int i = 0;
-                if (destinationRectangle.Intersects(platform.floorTiles[i]))
-                {
-                    gravity = 0;
-                }
+                gravity = 0;
             }
-
-
-         
 
         }
 
