@@ -12,36 +12,60 @@ namespace Frosty
     {
 
         SpriteSheet _spriteSheet = new SpriteSheet();
+        Platform _platform = new Platform();
+
         Point _startPosition;
-        Rectangle destinationRectangle;
+        Rectangle destinationRectangle = new Rectangle();
 
-        float gravity = -9.81f;
+        int gravity = 9;
 
 
-
-        public void Update(GameTime time)
+        public void Initialise(SpriteSheet spriteSheet)
         {
-            Gravity();
+
+            _startPosition = new Point(100, GameSettings.WINDOWHEIGHT - spriteSheet._spriteSize * 5);
+            destinationRectangle = new Rectangle(_startPosition.X, _startPosition.Y, spriteSheet._spriteSize, spriteSheet._spriteSize);
+
         }
-
-
-
-
+       
 
         public void DrawPlayer(SpriteBatch spriteBatch, SpriteSheet spriteSheet)
-        {
-
-            _startPosition = new Point(100, GameSettings.WINDOWHEIGHT - spriteSheet._spriteSize * 2);
-            destinationRectangle = new Rectangle(_startPosition.X, _startPosition.Y, spriteSheet._spriteSize, spriteSheet._spriteSize);
+        {                     
+           
 
             spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[62], destinationRectangle);
 
         }
 
+        public void Update(GameTime time)
+        {
+            Gravity();
+            Collision(_platform);
+        }
 
         public void Gravity()
         {
-            destinationRectangle.Y += (int)gravity;
+            destinationRectangle.Y += gravity;
+            
+        }
+
+        public void Collision(Platform platform)
+        {
+
+            
+
+            foreach(Rectangle rect in platform.floorTiles)
+            {
+                int i = 0;
+                if (destinationRectangle.Intersects(platform.floorTiles[i]))
+                {
+                    gravity = 0;
+                }
+            }
+
+
+         
+
         }
 
 

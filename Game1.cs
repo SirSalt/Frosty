@@ -29,6 +29,7 @@ namespace Frosty
         {
             // TODO: Add your initialization logic here
             _spriteSheet.SpriteList();
+            _avatar.Initialise(_spriteSheet);
 
 
             base.Initialize();
