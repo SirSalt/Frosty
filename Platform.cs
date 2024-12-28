@@ -19,17 +19,14 @@ namespace Frosty
         public List<Rectangle> floorTiles = new List<Rectangle>();
         public Rectangle floorCollider;
 
+        Vector2 Velocity;
+
 
 
         public void PlatformInitialize()
         {
             FloorCollider();
-        }
 
-
-        public void update(GameTime gameTime)
-        {
-            MoveFloor();
         }
 
 
@@ -40,16 +37,36 @@ namespace Frosty
             spriteSize = _spriteSheet._spriteSize;
 
 
-            destinationrectangle = new Rectangle(0, GameSettings.WINDOWHEIGHT - spriteSize, spriteSize, spriteSize);
+
+            destinationrectangle = new Rectangle(0, GameSettings.WINDOWHEIGHT - _spriteSheet._spriteSize, _spriteSheet._spriteSize, _spriteSheet._spriteSize);
+
+
+            
 
             for (int i = 0; i <= GameSettings.WINDOWWIDTH / spriteSize; i++)
             {
-
-                spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[3], destinationrectangle);
+                
                 floorTiles.Add(destinationrectangle);
-                destinationrectangle.X += spriteSheet._spriteSize;
-
+                
             }
+
+            for (int i = 0; i < floorTiles.Count; i++) 
+            {
+                spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[3], destinationrectangle);
+                destinationrectangle.X += spriteSheet._spriteSize;
+            }
+
+            MoveFloor();
+
+
+            floorTiles.Remove(floorTiles[5]);
+
+
+           /* if (floorTiles[0].X == 0-spriteSize)
+            {
+                floorTiles.Remove(floorTiles[0]);
+            }*/
+
         }
 
         void FloorCollider()
