@@ -78,3 +78,43 @@ F:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\bin\Debug\net6.0-windows\runtimes
 F:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\Frosty.csproj.Up2Date
 F:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\Frosty.genruntimeconfig.cache
 F:\DAE_IGP_2024-2025\PlatformDev\Frosty\Frosty\obj\Debug\net6.0-windows\ref\Frosty.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Content\Graphics\sheet.xnb
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Frosty.exe
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Frosty.deps.json
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Frosty.runtimeconfig.json
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Frosty.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Frosty.pdb
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\GeoSketch.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.csproj.AssemblyReference.cache
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.GeneratedMSBuildEditorConfig.editorconfig
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.AssemblyInfoInputs.cache
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.AssemblyInfo.cs
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.csproj.CoreCompileInputs.cache
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.sourcelink.json
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.csproj.Up2Date
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\refint\Frosty.dll
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.pdb
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\Frosty.genruntimeconfig.cache
+F:\DAE_IGP_2024-2025\PlatformDev\Frosty - Copy\Frosty\obj\Debug\net6.0-windows\ref\Frosty.dll

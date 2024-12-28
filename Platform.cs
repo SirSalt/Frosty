@@ -13,19 +13,20 @@ namespace Frosty
     {
 
         SpriteSheet _spriteSheet = new SpriteSheet();
-        public FloorTile floorTile;
+        public Rectangle destinationrectangle;
         int spriteSize;
 
-        public List<FloorTile> floorTiles = new List<FloorTile>();
+        public List<Rectangle> floorTiles = new List<Rectangle>();
         public Rectangle floorCollider;
 
-        Vector2 Velocity = new Vector2(10, 0);
+        Vector2 Velocity;
+
 
 
         public void PlatformInitialize()
         {
             FloorCollider();
-            floorTile.posistion = new Vector2(GameSettings.WINDOWHEIGHT - spriteSize, 0);
+
         }
 
 
@@ -37,27 +38,21 @@ namespace Frosty
 
 
 
-            floorTile.posistion = new Vector2(0, GameSettings.WINDOWHEIGHT - _spriteSheet._spriteSize);
+            destinationrectangle = new Rectangle(0, GameSettings.WINDOWHEIGHT - _spriteSheet._spriteSize, _spriteSheet._spriteSize, _spriteSheet._spriteSize);
 
 
-
+            
 
             for (int i = 0; i <= GameSettings.WINDOWWIDTH / spriteSize; i++)
             {
-
-                floorTiles.Add(floorTile);
+                
+                floorTiles.Add(destinationrectangle);
+                spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[3], destinationrectangle);
+                destinationrectangle.X += spriteSheet._spriteSize;
 
             }
 
-            /*foreach(FloorTile FT in floorTiles)
-            {
-                spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[3], FT.posistion);
-                FT.posistion -= Velocity;
-            }*/
-
-
-
-
+            
 
         }
 
