@@ -13,7 +13,7 @@ namespace Frosty
 {
     public class SpriteSheet
     {
-        static Vector2 _origin = new Vector2(100, 100);
+        public Vector2 _origin;
 
         public Texture2D _texture;
         public int _spriteSize = 70;

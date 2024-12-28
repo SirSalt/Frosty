@@ -29,7 +29,7 @@ namespace Frosty
             // TODO: Add your initialization logic here
             _spriteSheet.SpriteList();
             _avatar.Initialise(_spriteSheet);
-            _platform.PlatformInitialize();
+            //_platform.PlatformInitialize();
 
 
             base.Initialize();
@@ -75,7 +75,7 @@ namespace Frosty
             
 
             //draw ground plane
-            _platform.BaseGround(_spriteBatch, _spriteSheet);
+            //_platform.BaseGround(_spriteBatch, _spriteSheet);
 
             //Draw Player
             _avatar.DrawPlayer(_spriteBatch, _spriteSheet);

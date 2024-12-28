@@ -30,7 +30,7 @@ namespace Frosty
 
         public virtual void Update()
         {
-            if(isActive = true)
+            if(isActive)
             {
                 MoveGameObject();
             }
@@ -40,7 +40,7 @@ namespace Frosty
         {
             if (isActive) 
             {
-                spriteSheet.position -= velocity;
+                spriteSheet._origin -= velocity;
             }
         }
 
@@ -48,7 +48,7 @@ namespace Frosty
         {
             if(isActive)
             {
-                spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[sprite]);
+                spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[sprite], topLeft);
             }
         }
 
