@@ -29,6 +29,7 @@ namespace Frosty
             // TODO: Add your initialization logic here
             _spriteSheet.SpriteList();
             _avatar.Initialise(_spriteSheet);
+            _platform.PlatformInitialize();
 
 
             base.Initialize();
@@ -54,6 +55,7 @@ namespace Frosty
 
             _spriteSheet.Update(gameTime);
             _avatar.Update(gameTime);
+            _platform.update(gameTime);
 
             //reactivate when i have screens!!!!!!!!!
             //GameSettings.ActiveScreen.Update(gameTime);

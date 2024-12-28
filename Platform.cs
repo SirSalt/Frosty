@@ -17,8 +17,20 @@ namespace Frosty
         int spriteSize;
 
         public List<Rectangle> floorTiles = new List<Rectangle>();
+        public Rectangle floorCollider;
 
 
+
+        public void PlatformInitialize()
+        {
+            FloorCollider();
+        }
+
+
+        public void update(GameTime gameTime)
+        {
+            MoveFloor();
+        }
 
 
         //make base Ground
@@ -30,7 +42,6 @@ namespace Frosty
 
             destinationrectangle = new Rectangle(0, GameSettings.WINDOWHEIGHT - spriteSize, spriteSize, spriteSize);
 
-
             for (int i = 0; i <= GameSettings.WINDOWWIDTH / spriteSize; i++)
             {
 
@@ -39,8 +50,16 @@ namespace Frosty
                 destinationrectangle.X += spriteSheet._spriteSize;
 
             }
+        }
 
+        void FloorCollider()
+        {
+            floorCollider = new Rectangle(0, GameSettings.WINDOWHEIGHT - spriteSize, GameSettings.WINDOWWIDTH, spriteSize);
+        }
 
+        void MoveFloor()
+        {
+            destinationrectangle.X -= 10;
         }
 
 

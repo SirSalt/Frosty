@@ -39,7 +39,7 @@ namespace Frosty
 
         public void Update(GameTime time)
         {
-            //Gravity();
+            Gravity();
             Collision(_platform);
         }
 
@@ -50,17 +50,24 @@ namespace Frosty
         }
 
         public void Collision(Platform platform)
-        {
+        {  
+       
+            /*if (destinationRectangle.Intersects(platform.floorCollider))
+            {
+                //gravity = 0;
 
-            int index = destinationRectangle.X/GameSettings.WINDOWWIDTH;
-
-            for(int i = 0; i<platform.floorTiles.Count;)
+                destinationRectangle.Y = 0;
 
 
-            if (destinationRectangle.Intersects(platform.floorTiles[index]))
+            }*/
+
+
+            if(destinationRectangle.Y >= GameSettings.WINDOWHEIGHT-(_spriteSheet._spriteSize)*2)
             {
                 gravity = 0;
             }
+
+
 
         }
 
