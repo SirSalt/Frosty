@@ -58,15 +58,6 @@ namespace Frosty
 
             MoveFloor();
 
-
-            floorTiles.Remove(floorTiles[5]);
-
-
-           /* if (floorTiles[0].X == 0-spriteSize)
-            {
-                floorTiles.Remove(floorTiles[0]);
-            }*/
-
         }
 
         void FloorCollider()
