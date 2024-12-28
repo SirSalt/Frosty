@@ -47,28 +47,24 @@ namespace Frosty
             {
                 
                 floorTiles.Add(destinationrectangle);
-                
-            }
-
-            for (int i = 0; i < floorTiles.Count; i++) 
-            {
                 spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[3], destinationrectangle);
                 destinationrectangle.X += spriteSheet._spriteSize;
+
             }
 
-            MoveFloor();
+            
 
         }
+
+
+
 
         void FloorCollider()
         {
             floorCollider = new Rectangle(0, GameSettings.WINDOWHEIGHT - spriteSize, GameSettings.WINDOWWIDTH, spriteSize);
         }
 
-        void MoveFloor()
-        {
-            destinationrectangle.X -= 10;
-        }
+
 
 
     }
