@@ -20,7 +20,6 @@ namespace Frosty
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-
             _graphics.PreferredBackBufferWidth = GameSettings.WINDOWWIDTH;
             _graphics.PreferredBackBufferHeight = GameSettings.WINDOWHEIGHT;
         }

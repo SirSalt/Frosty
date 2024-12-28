@@ -39,7 +39,7 @@ namespace Frosty
 
         public void Update(GameTime time)
         {
-            Gravity();
+            //Gravity();
             Collision(_platform);
         }
 

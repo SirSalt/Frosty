@@ -16,7 +16,6 @@ namespace Frosty
         public abstract bool isActive { get; set; }
         public abstract int velocity { get; set; }
         public abstract bool isOutOfBounds { get; set; }
-        public abstract int initialRotation { get; set; }
 
         public virtual void Update()
         {

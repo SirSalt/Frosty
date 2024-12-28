@@ -7559,32 +7559,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stijn\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\SirSalt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DAE_IGP_2024-2025\\PlatformDev\\Frosty\\Frosty\\Frosty.csproj",
+      "projectUniqueName": "F:\\DAE_IGP_2024-2025\\PlatformDev\\Frosty\\Frosty\\Frosty.csproj",
       "projectName": "Frosty",
-      "projectPath": "E:\\DAE_IGP_2024-2025\\PlatformDev\\Frosty\\Frosty\\Frosty.csproj",
-      "packagesPath": "C:\\Users\\Stijn\\.nuget\\packages\\",
-      "outputPath": "E:\\DAE_IGP_2024-2025\\PlatformDev\\Frosty\\Frosty\\obj\\",
+      "projectPath": "F:\\DAE_IGP_2024-2025\\PlatformDev\\Frosty\\Frosty\\Frosty.csproj",
+      "packagesPath": "C:\\Users\\SirSalt\\.nuget\\packages\\",
+      "outputPath": "F:\\DAE_IGP_2024-2025\\PlatformDev\\Frosty\\Frosty\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Stijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\SirSalt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Stijn\\Downloads": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
