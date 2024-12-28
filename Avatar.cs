@@ -15,7 +15,7 @@ namespace Frosty
         Platform _platform = new Platform();
 
         Point _startPosition;
-        Rectangle destinationRectangle = new Rectangle();
+        Vector2 position;
 
         int gravity = 9;
 
@@ -24,7 +24,7 @@ namespace Frosty
         {
 
             _startPosition = new Point(100, GameSettings.WINDOWHEIGHT - spriteSheet._spriteSize * 5);
-            destinationRectangle = new Rectangle(_startPosition.X, _startPosition.Y, spriteSheet._spriteSize, spriteSheet._spriteSize);
+            position = new Vector2(_startPosition.X, _startPosition.Y);
 
         }
        
@@ -33,7 +33,7 @@ namespace Frosty
         {                     
            
 
-            spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[62], destinationRectangle);
+            spriteSheet.DrawSprite(spriteBatch, spriteSheet.sprites[62], position);
 
         }
 
@@ -45,7 +45,7 @@ namespace Frosty
 
         public void Gravity()
         {
-            destinationRectangle.Y += gravity;
+            position.Y += gravity;
             
         }
 
@@ -62,7 +62,7 @@ namespace Frosty
             }*/
 
 
-            if(destinationRectangle.Y >= GameSettings.WINDOWHEIGHT-(_spriteSheet._spriteSize)*2)
+            if(position.Y >= GameSettings.WINDOWHEIGHT-(_spriteSheet._spriteSize)*2)
             {
                 gravity = 0;
             }

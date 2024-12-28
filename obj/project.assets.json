@@ -7655,5 +7655,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file F:\\DAE_IGP_2024-2025\\PlatformDev\\Frosty\\Frosty\\obj\\project.nuget.cache : Value cannot be null.\r\nParameter name: value"
+    }
+  ]
 }

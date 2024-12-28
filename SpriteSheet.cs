@@ -19,6 +19,8 @@ namespace Frosty
         public int _spriteSize = 70;
         //public Rectangle _dedstinationRectangle = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
 
+
+
         public List<Point> sprites = new List<Point>();
 
 
@@ -58,12 +60,12 @@ namespace Frosty
         }
 
 
-        public void DrawSprite(SpriteBatch spritebatch, Point sprite, Rectangle destinationRectangle)
+        public void DrawSprite(SpriteBatch spritebatch, Point sprite, Vector2 position)
         {
             //_dedstinationRectangle = new Rectangle((int)_origin.X, (int)_origin.Y, _spriteSize, _spriteSize);
 
 
-            spritebatch.Draw(_texture, destinationRectangle, new Rectangle(0 + _spriteSize * sprite.X, 0 + _spriteSize * sprite.Y, _spriteSize, _spriteSize), Color.White);
+            spritebatch.Draw(_texture, position, new Rectangle(0 + _spriteSize * sprite.X, 0 + _spriteSize * sprite.Y, _spriteSize, _spriteSize), Color.White);
 
 
         }
